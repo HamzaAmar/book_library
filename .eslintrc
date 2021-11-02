@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "prettier"],
+  "extends": [
+    "plugin:@shopify/typescript",
+    "plugin:@shopify/typescript-type-checking",
+    "plugin:@shopify/react",
+    "plugin:@shopify/prettier",
+    "plugin:@next/next/recommended"
+  ],
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "rules": {
+    "no-console": 1,
+    "jsx-a11y/control-has-associated-label": [
+      "error",
+      {
+        "labelAttributes": ["label"],
+        "controlComponents": [],
+        "ignoreElements": [
+          "audio",
+          "canvas",
+          "embed",
+          "input",
+          "textarea",
+          "tr",
+          "video"
+        ],
+        "ignoreRoles": [
+          "grid",
+          "listbox",
+          "menu",
+          "menubar",
+          "radiogroup",
+          "row",
+          "tablist",
+          "toolbar",
+          "tree",
+          "treegrid"
+        ],
+        "depth": 5
+      }
+    ],
+    "jsx-a11y/label-has-for": [
+      "off",
+      {
+        "components": [],
+        "required": {
+          "every": ["nesting", "id"]
+        },
+        "allowChildren": false
+      }
+    ]
+  }
+}
