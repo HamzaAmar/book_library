@@ -1,9 +1,65 @@
+:root {
+  --primary-color-light: hsl(9, 100%, 85%);
+  --primary-color-main: hsl(10, 100%, 81%);
+  --primary-color-dark: hsl(10, 95%, 75%);
+
+  --secondary-color-light: hsl(308, 12%, 48%);
+  --secondary-color-main: hsl(265, 52%, 30%);
+  --secondary-color-dark: hsl(265, 68%, 22%);
+
+  --warning-color-light: hsl(32, 75%, 74%);
+  --warning-color-main: hsl(32, 75%, 64%);
+  --warning-color-dark: hsl(32, 85%, 54%);
+
+  --danger-color-light: hsl(0, 64%, 65%);
+  --danger-color-main: hsl(0, 73%, 55%);
+  --danger-color-dark: hsl(0, 73%, 45%);
+
+  --success-color-light: hsl(143, 85%, 65%);
+  --success-color-main: hsl(143, 85%, 55%);
+  --success-color-dark: hsl(143, 85%, 45%);
+
+  --text-color-light: hsl(0, 0%, 15%);
+  --text-color-main: hsl(0, 0%, 10%);
+  --text-color: hsl(0, 0%, 5%);
+
+  --primary-background-light: hsl(0, 0%, 100%);
+  --primary-background-main: hsl(0, 31%, 90%);
+  --primary-background-dark: hsl(0, 15%, 80%);
+
+  --border-radius: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+div,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 a {
@@ -11,6 +67,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.textCenter {
+  text-align: center;
 }
