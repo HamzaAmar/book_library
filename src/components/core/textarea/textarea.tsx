@@ -1,9 +1,9 @@
 import React from "react";
 
-import { InputProps } from "./textarea.type";
+import { TextAreaProps } from "./textarea.type";
 import styles from "./textarea.module.css";
 
-const textarea = (props: InputProps) => {
+const textarea = (props: TextAreaProps) => {
   const { textareaSize = "fluid", touched, error, ...rest } = props;
 
   const textareaClassNames = `${styles.textarea} ${styles[textareaSize]}`;
