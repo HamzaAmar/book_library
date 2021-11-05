@@ -1,11 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Logo } from "@components/common";
 import { Bag } from "@components/icons";
 import { Button } from "@components/core";
 import { NAV_DATA } from "@constants/navData";
 import Link from "next/link";
 import { useUI } from "@context/UIContext";
+
+import { Logo } from "..";
 
 import styles from "./header.module.css";
 import { ItemProps } from "./header.type";

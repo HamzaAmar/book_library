@@ -15,6 +15,7 @@
   justify-content: space-evenly;
   padding: 0 4em;
   padding-left: 10vw;
+  gap: 2rem;
 }
 
 .list {
