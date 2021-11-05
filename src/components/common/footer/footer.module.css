@@ -20,6 +20,19 @@
   text-align: start;
 }
 
+.nav[data-type="nav"] {
+  grid-area: nav;
+}
+.nav[data-type="area"] {
+  grid-area: area;
+}
+.nav[data-type="category"] {
+  grid-area: category;
+}
+.nav[data-type="social"] {
+  grid-area: social;
+}
+
 .info {
   grid-area: info;
 }

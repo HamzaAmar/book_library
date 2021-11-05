@@ -4,14 +4,15 @@ import {
   CUSTOM_AREA_NAV,
   NAV_DATA,
   SOCIAL_MEDIA_NAV,
-} from "@constants/nav";
+} from "@constants/navData";
 import React from "react";
 
 import styles from "./footer.module.css";
+import { NavProps } from "./footer.type";
 
-const Nav = ({ title, list, ...rest }) => {
+const Nav = ({ title, list, type, ...rest }: NavProps) => {
   return (
-    <nav className={styles.nav} {...rest}>
+    <nav className={styles.nav} data-type={type} {...rest}>
       <h1>{title}</h1>
       <ul>
         {list.map(({ id, title }) => (
@@ -34,22 +35,10 @@ const footer = () => {
           animi ut quia.
         </p>
       </div>
-      <Nav title="Quick Links" style={{ gridArea: "nav" }} list={NAV_DATA} />
-      <Nav
-        title="Custom Area"
-        style={{ gridArea: "area" }}
-        list={CUSTOM_AREA_NAV}
-      />
-      <Nav
-        title="Category"
-        style={{ gridArea: "category" }}
-        list={CATEGORIES_NAV}
-      />
-      <Nav
-        title="Social Media"
-        style={{ gridArea: "social" }}
-        list={SOCIAL_MEDIA_NAV}
-      />
+      <Nav title="Quick Links" type="nav" list={NAV_DATA} />
+      <Nav title="Custom Area" type="area" list={CUSTOM_AREA_NAV} />
+      <Nav title="Category" type="category" list={CATEGORIES_NAV} />
+      <Nav title="Social Media" type="social" list={SOCIAL_MEDIA_NAV} />
       <div className={styles.copyRight}>
         <p>Hello world</p>
       </div>
