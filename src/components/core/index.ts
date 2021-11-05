@@ -3,3 +3,7 @@ export { default as Input } from "./input";
 export { default as TextArea } from "./textarea";
 export { default as Radio } from "./radio";
 export { default as Toggle } from "./toggle";
+export { default as Checkbox } from "./checkbox";
+export { default as FormController } from "./formController";
+export { default as Text } from "./text";
+export { default as Heading } from "./heading";
